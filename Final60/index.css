@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+    body {
+        background-color: #F1F1F1;
+    }
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -400px;
+    }
+    .message-box {
+        height: 60vh;
+        width: 25vw;
+        position: absolute;
+        left: 50%;
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-weight: 300;
+        background-color: #B5C18E;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .message-box h1 {
+        position: relative;
+        font-size: 60px;
+        line-height: 46px;
+        top: 40%;
+        margin-left: 50px;
+    }
+    .message-box p {
+        position: relative;
+        font-size: 20px;
+        line-height: 46px;
+        top: 41%;
+        margin-left: 50px;
+    }
+    
+    #Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+        animation: float 1s infinite ease-in-out alternate;
+    }
+    #Polygon-2 {
+        animation-delay: .2s; 
+    }
+    #Polygon-3 {
+        animation-delay: .4s; 
+    }
+    #Polygon-4 {
+        animation-delay: .6s; 
+    }
+    #Polygon-5 {
+        animation-delay: .8s; 
+    }
+    
+    @keyframes float {
+        100% {
+        transform: translateY(20px);
+        }
+    }
+    @media (max-width: 450px) {
+        svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -190px;
+    }
+    .message-box {
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -190px;
+        text-align: center;
+    }
+}
+
+.user{
+    position: relative;
+    font-size: xx-large;
+    line-height: 46px;
+    top: 41%;
+    margin-left: 50px;
+}
+.bod{
+    position: absolute;
+    border-radius: 20px;
+    height: 60vh;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 110px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+}
